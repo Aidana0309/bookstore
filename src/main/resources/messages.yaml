@@ -1,0 +1,42 @@
+# Book Validation
+book:
+  name:
+    notBlank: Name cannot be empty.
+  price:
+    notBlank: Price cannot be empty.
+  authors:
+    notBlank: Authors cannot be empty.
+  isbn:
+    notBlank: ISBN cannot be empty.
+    size: ISBN can have 10 or 13 digits.
+  publisher:
+    notBlank: Publisher cannot be empty.
+  date:
+    notNull: Date cannot be empty.
+
+# Billing Details Validation
+billing:
+  name:
+    notBlank: Name cannot be empty.
+    maxSize:  Name.
+  surname:
+    notBlank: Surname cannot be empty.
+    maxSize: Surname.
+  countryRegion:
+    notBlank: Country or Region cannot be empty.
+    maxSize: Country/Region.
+  streetAndHouseNumber:
+    notBlank: Street and house number cannot be empty.
+    maxSize: Street and house number.
+  city:
+    notBlank: City cannot be empty.
+    maxSize: City.
+  postalCode:
+    notBlank: Postal code cannot be empty.
+    maxSize: Postal Code.
+  phoneNumber:
+    notBlank: Phone number cannot be empty.
+    maxSize: Phone number.
+  email:
+    notBlank: Email cannot be empty.
+    maxSize: Email.
